@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/UrRmT3mBwY326qQxUfVlHu1P/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-b3tGrrJFQIPZurcFNV2vrA2u2er9PWPAKHNcMEptlkLhk70c4ZdB0G3jp+CLqqAB"></script>
+    <title>Commandez.net</title>
+</head>
+<body>
+	<section class="hero is-fullheight is-default is-bold">
+		<div class="hero-head">
+			<nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                            <img class="is-rounded" src="line.png" alt="Logo"> Commandez.net
+                        </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="hero-body">
+            <div class="container">
+				<h1>Bienvenue sur Commandez.net</h1>
+					<div class="container_2">
+						<div class="columns is-multiline is-mobile">
+							<div class="column">
+								<figure class="options">
+									<div class="dropdown is-hoverable" onclick="myFunction()">
+										<div class="dropdown-trigger">
+											<img src="line.png">
+											<span class="service">NIGELEC</span>	
+										</div>
+										<div class="dropdown-menu" id="dropdown-menu4" role="menu">
+											<div class="dropdown-content">
+												<a href="#" class="dropdown-item">
+													Overview
+												</a>
+												<hr class="dropdown-divider">
+												<a href="#" class="dropdown-item">
+													Modifiers
+												</a>
+												<hr class="dropdown-divider">
+												<a href="#" class="dropdown-item">
+													Grid
+												</a>																					
+											</div>
+										</div>
+									</div>																	
+								</figure>
+							</div>
+						    <div class="column">
+								<figure class="options">
+									<img src="line.png">
+									<span class="service">SEEN</span>
+								</figure>
+						    </div>
+						    <div class="column">
+								<figure class="options">
+									<img src="line.png">
+									<span class="service">GAZ</span>
+								</figure>
+						    </div>
+						    <div class="column">
+								<figure class="options">
+									<img src="line.png">
+									<span class="service">TV</span>
+								</figure>
+							</div>
+							<div class="column">
+								<figure class="options">
+									<img src="line.png">
+									<span class="service">NIGELEC</span>
+								</figure>
+							</div>
+						    <div class="column">
+								<figure class="options">
+									<img src="line.png">
+									<span class="service">NIGELEC</span>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulaire" id="paiement">
+				<div class="form-block">
+					<div class="form-content" data-controller="client">
+						<div class="tabs is-boxed mb-5">
+							<ul>
+								<li class="is-active">
+									<a>
+									<span>Faire un paiement</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="payment-content mx-5">
+							<div data-target="client.step client.phoneStep" id="fisrt-form">
+								<div class="field">
+								  <label class="label">Telephone</label>
+								  <div class="field has-addons">
+									<select class="control">
+									  <option selected="" class="button is-static">+ 227</option>
+									  <option class="button is-static">+ 229</option>
+									  <option class="button is-static">+ 223</option>
+									  <option class="button is-static">+ 235</option>
+									</select>
+									<p class="control is-expanded">
+									  <input class="input required" type="tel" placeholder="Votre Numéro Mobile" data-target="client.phone" data-action="client#checkPhoneError">
+									</p>
+								  </div>
+								  <span class="is-hidden errorMessage" data-target="client.phoneError">Veuillez entrer le numéro sous le format XXXXXXXX</span>
+								</div>
+								<div class="field">
+								  <label class="label">Reférence De La Facture</label>
+								  <div class="control mb-3">
+									<input class="input required" type="text" placeholder="Reférence" data-target="client.matricule" data-action="client#checkMatriculeError">
+								  </div>
+								  <span class="is-hidden errorMessage" data-target="client.matriculeError">Veuillez entrer la reférence sous le format XXXXXXXXXXXXXX</span>
+								</div>
+								<p><span data-target="client.studentErrorMessage" class="errorMessage"></span></p>
+
+								<div class="my-4">            
+								  <div class="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpiredCallback" data-sitekey="6Lfq5bEaAAAAAA4wGgsETFyRcgqzzhTDtkPbr6hi"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfq5bEaAAAAAA4wGgsETFyRcgqzzhTDtkPbr6hi&amp;co=aHR0cHM6Ly93d3cuaXBheXNjaG9vbC5jb206NDQz&amp;hl=en&amp;v=UrRmT3mBwY326qQxUfVlHu1P&amp;size=normal&amp;cb=kr7kfpld8k6s" width="304" height="78" role="presentation" name="a-vab5dx7uk90" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+								</div>
+
+								<button class="button is-primary" id="checkIDButton" data-action="client#checkID" disabled="">Démarrer Le Processus De Paiement</button>     
+
+							</div>
+						<div>
+					</div>
+				</div>
+		</div>
+	</setion>
+<script>
+function myFunction() {
+  document.getElementById("paiement").style.display = "block";
+}
+</script>
+</body>
+</html>

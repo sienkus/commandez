@@ -1,0 +1,58 @@
+﻿	body{
+		background-color: #FFF1F1;
+	}
+	h1 {
+		font-family: Lato;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 70px;
+		line-height: 59px;
+		text-align: center;
+	}
+	.column {
+		/*float: left;*/
+		padding: 25px;
+		top:60px;
+		clear: both;
+	}
+	.container_2 {
+
+		height: 319px;
+		left: 68px;
+		right: 68px;
+		top: 234px;
+
+		background: #FFF8F8;
+		border: 5px solid #FFFFFF;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 4px rgba(184, 4, 4, 0.25), inset 0px 4px 4px rgba(177, 7, 7, 0.24);
+		border-radius: 30px;
+		justify-content: normal;
+	}
+	.options {
+		background: radial-gradient(50% 50% at 50% 50%, #FFF1F1 0%, #F8DADA 100%);
+		border-radius: 28px;
+		height: 200px;
+		text-align: center;
+		font-family: Lato;
+		font-style: normal;
+		font-weight: 200;
+		font-size: 16px;
+		color: #000000;
+	}
+	.formulaire {
+		display: none;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		background: white;
+		border-radius: 10px;
+		width: 650px;
+		padding: 10px;
+	}
+	.is-rounded {
+		height: 100px;
+		width: 30px;
+		border-radius: 50%;
+		padding: 2px;
+	}
